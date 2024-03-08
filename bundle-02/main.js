@@ -21,22 +21,27 @@ function checkAge() {
         message = 'Hai più di 18 anni!';
     }
 }
-checkAge();
+console.log(checkAge());
 
 // questa funzione paragona l'eta di qualcuno per vedere se maggiorenne o meno. 
 // ho modificato la variabile const in let 
+// aggiunto console.log
+
 
 // ESERCIZIO 2
 function printColorsNumber() {
     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
 }
 printColorsNumber();
+
+// lenght scritto male
+// questa function restituiste una frase con al suo interno gli elementi di un array
 
 
 // ESERCIZIO 3
 function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
+    const userNumber = prompt ('Inserisci un numero');
     const total = userNumber + 12;
 
     console.log(`Il risultato finale è ${total}`);
