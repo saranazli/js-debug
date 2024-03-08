@@ -43,23 +43,25 @@ loopToFive();
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
-console.log(displayEvenNumbers()); // dovrebbe restituire [2,4,6,8]
+
 
 function displayEvenNumbers() {
     
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
 
-    for (let i = 0; i < numbers.length - 1; i++) {
+    for (let i = 0; i < numbers.length; i++) {
 
-        if (numbers % 2 === 0) {
-            evenNumbers.push(i);
+        if (numbers[i] % 2 === 0) {
+            evenNumbers.push(numbers[i]);
         };
     };
 
     return evenNumbers;
 };
+
+console.log(displayEvenNumbers()); // dovrebbe restituire [2,4,6,8]
 
 /* 
 1 eliminato il punto e virgola posizionato dopo l'i++
@@ -69,4 +71,5 @@ function displayEvenNumbers() {
 5 il punto e virgola nell'if tra la parentesi tonda ) e la graffa {
 6 la variabile con l'array da riempire deve essere globale
 7 la funzione necessita di un parametro
+8 il meno uno l'ho tolto
 */
