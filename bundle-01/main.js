@@ -42,15 +42,31 @@ loopToFive();
 
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
-function displayEvenNumbers() {
-    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-    let evenNumbers = [];
-    for (let i = 0; i < numbers.length - 1; i++;) {
-        if (numbers % 2 = 0); {
-            evenNumbers.push(i);
-        }
-        return evenNumbers;
-    }
-}
-displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+console.log(displayEvenNumbers()); // dovrebbe restituire [2,4,6,8]
+
+function displayEvenNumbers() {
+    
+    let evenNumbers = [];
+
+    for (let i = 0; i < numbers.length - 1; i++) {
+
+        if (numbers % 2 === 0) {
+            evenNumbers.push(i);
+        };
+    };
+
+    return evenNumbers;
+};
+
+/* 
+1 eliminato il punto e virgola posizionato dopo l'i++
+2 l'uguale in tre uguali
+3 il return va esternamente al ciclo for internamente alla function
+4 let numbers è una const
+5 il punto e virgola nell'if tra la parentesi tonda ) e la graffa {
+6 la variabile con l'array da riempire deve essere globale
+7 la funzione necessita di un parametro
+*/
