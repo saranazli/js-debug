@@ -13,7 +13,7 @@
 // ESERCIZIO 1
 function checkAge() {
     const myAge = 32;
-    const message = '';
+    let message = '';
 
     if (myAge < 18) {
         message = `Sei troppo giovane! Hai ${myAge} anni!`;
@@ -22,6 +22,9 @@ function checkAge() {
     }
 }
 checkAge();
+
+// questa funzione paragona l'eta di qualcuno per vedere se maggiorenne o meno. 
+// ho modificato la variabile const in let 
 
 // ESERCIZIO 2
 function printColorsNumber() {
