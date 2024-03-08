@@ -98,8 +98,8 @@ function checkAccessImproved() {
             console.log('Accesso negato!');
         }
     }
-    checkAccessImproved();
 }
+checkAccessImproved();
 
 // manca la graffa di chiusura
 // false e true sempre in versione stringa e non come valore booleano
