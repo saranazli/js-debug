@@ -41,23 +41,24 @@ printColorsNumber();
 
 // ESERCIZIO 3
 function addNumbers() {
-    const userNumber = prompt ('Inserisci un numero');
+    const userNumber = parseInt (prompt ('Inserisci un numero'));
     const total = userNumber + 12;
 
     console.log(`Il risultato finale è ${total}`);
 }
 addNumbers();
 
+// parseint per visualizzare i lvalore numerico del prompt
 
 // ESERCIZIO 4
 function checkAccess() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false;
 
     if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
+        grantAccess = true;
     }
 
     if (grantAccess === true) {
@@ -68,6 +69,8 @@ function checkAccess() {
 }
 checkAccess();
 
+// true o false scritto sottoforma di stringa e non come valori booleani
+
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
 function checkAccessImproved() {
@@ -75,7 +78,7 @@ function checkAccessImproved() {
 
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false;
 
     for (let i = 0; i < addresses.length; i++) {
         const email = addresses[i];
@@ -83,7 +86,7 @@ function checkAccessImproved() {
         if (userEmail.length > 5) {
 
             if (email === userEmail) {
-                grantAccess = 'true';
+                grantAccess = true;
 
             }
 
@@ -96,6 +99,10 @@ function checkAccessImproved() {
         }
     }
     checkAccessImproved();
+}
+
+// manca la graffa di chiusura
+// false e true sempre in versione stringa e non come valore booleano
 
 
 
